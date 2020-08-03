@@ -32,37 +32,29 @@
         margin-top:50px;
         margin-bottom:30px;
       }
-      .input{
-        background-color:#c060a1;
-        margin:15px;
-        border-radius:1%;
-        border-color:white;
-        border-style:solid;
       
-      }
       ::placeholder{
         text-align:center;
-        color:#f3f3f3;
-        padding-top:15px;
+        color:#fff !important;
       }
-      .submit{
+      .btn{
         background-color:#fff;
         color:#c060a1;
         border-color:white;
         font-size:17px;
         line-height:34px;
-        margin-left:-11%;
-        margin-top:-2px;
       }
-      .submit:hover{
+      .btn:hover{
         background-color:#c060a1;
         color:#fff;
-
+        transition:1s;
+      }
+      input, textarea{
+        border-width:2px !important;
+        border-color:white !important;
+        text-align:center;
       }
       
-      .email{
-        line-height:35px;
-      }
     </style>
   </head
   <body>
@@ -82,16 +74,20 @@
         </li>
       </ul>
     </nav>
-    <h6>Send a message directly to <b>odusanya.folukemi@gmail.com</b></h6>
+    <div class="container">
+    <h6>Send a message directly to <strong>odusanya.folukemi@gmail.com</strong></h6>
+    <div class="container col-lg-4">
     <form class="form" action="mailto:odusanya.folukemi@gmail.com" method="post">
-      <input class="input email" type="text" name="Email" size="30" placeholder="Email">
+      <input class="form-control bg-transparent text-white" type="text" name="Email" size="30" placeholder="Email">
       </br>
-      <input class="input email" type="text" name="subject" size="30"  placeholder="Subject">
+      <input class="form-control bg-transparent text-white" type="text" name="subject" size="30"  placeholder="Subject">
       </br>
-      <textarea class="input" name="message" placeholder="Message" rows="10" cols="30"></textarea>
+      <textarea class="form-control bg-transparent text-white" name="message" placeholder="Message" rows="10" cols="30"></textarea>
       </br>
-      <button class="input submit" type="submit button" class="btn btn-light">Send Message</button>
+      <button type="button" class="btn btn-light">Send Message</button>
     </form>
+    </div>
+    </div>
 
   </body>
 </html>
